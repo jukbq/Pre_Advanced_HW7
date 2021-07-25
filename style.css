@@ -1,0 +1,14 @@
+.seerch {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.serchArr,
+.serchBtn {
+    width: 400px;
+}
+
+.serchBtn {
+    background-color: darkgreen;
+}
