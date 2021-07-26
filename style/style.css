@@ -7,8 +7,10 @@
 .serchArr,
 .serchBtn {
     width: 400px;
+    border-radius: 5px;
 }
 
 .serchBtn {
     background-color: darkgreen;
+    border: none;
 }
