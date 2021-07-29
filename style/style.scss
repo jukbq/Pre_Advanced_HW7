@@ -19,7 +19,7 @@
         justify-content: space-evenly;
         align-items: center;
         li {
-            width: 180px;
+            width: 250px;
             position: relative;
             display: flex;
             flex-direction: column;
@@ -28,7 +28,7 @@
             border: .5px solid #bbbbbb52;
             border-radius: 5px;
             img {
-                height: 250px;
+                height: 350px;
                 box-shadow: 0px 0px 4px 3px #808080b0;
             }
             .movie_titel {
@@ -52,4 +52,68 @@
     font-size: 80px;
     color: red;
     text-align: center;
+}
+
+.modal_win {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    top: 0px;
+    background-color: #373232cf;
+    z-index: -100;
+    order: 1;
+    .imfo_movie {
+        width: 90%;
+        height: 85%;
+        display: flex;
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        outline: 1px solid #bbbbbb52;
+        outline-offset: -15px;
+        padding: 20px;
+        margin: auto;
+        order: 2;
+        img {
+            height: 100%;
+            margin-right: 10px;
+        }
+        .text_content {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            text-align: left;
+            overflow: auto;
+            .movie_titel {
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #bbbbbb;
+                padding: 0 5px;
+                font-size: 16px;
+                font-weight: 600;
+            }
+            p {
+                font-size: 14;
+                span {
+                    font-weight: 600;
+                }
+            }
+             :nth-child(2) {
+                font-size: 12px;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+.modal_win_open {
+    opacity: 1;
+    z-index: 100;
 }
